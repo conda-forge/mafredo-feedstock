@@ -1,5 +1,5 @@
 {% set name = "mafredo" %}
-{% set version = "0.1.1" %}
+{% set version = "2025.1.2" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,8 +7,8 @@ package:
 
 source:
   # url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  url: https://files.pythonhosted.org/packages/71/8a/e87d1eae59111956a9f75400660393abaa064fb109835cbc39da20e902d3/MaFreDo-0.1.1.tar.gz  # hard-copied
-  sha256: b4919085019b86972e971b0204b8e280a80ed4d23203dc3baeb21130ea81ec69
+  url: https://files.pythonhosted.org/packages/58/8c/1731b0f4be8c1444b1f6f7f6c820d765d0f2dfd74adec93e91191cd233f6/mafredo-{{ version }}.tar.gz # hard-copied
+  sha256: 402aea055ed2a4ca94433aa13bbf6e5760f9ba406387762a2946ac11642f3c27
 
 build:
   number: 0
@@ -28,7 +28,7 @@ requirements:
     - numpy
     - pyyaml
     - matplotlib
-    
+
 test:
   imports:
     - mafredo
@@ -39,7 +39,7 @@ about:
   license_family: MOZILLA
   license_file: LICENSE
   summary: "Marine Frequency Domain"
-  doc_url: https://mafredo.readthedocs.io/en/latest/ 
+  doc_url: https://mafredo.readthedocs.io/en/latest/
   dev_url: https://github.com/RubendeBruin/mafredo
 
 extra:
